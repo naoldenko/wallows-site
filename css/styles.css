@@ -1,0 +1,9 @@
+/* Website's Font */
+@font-face {
+    font-family: "Verona Bold";
+    src: url('../css/fonts/Verona-Bold.ttf');
+}
+
+body {
+    font-family: "Verona Bold";
+}
