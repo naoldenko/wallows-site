@@ -5,6 +5,36 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <h1>Wallows</h1>
+        <div id="home-div">
+            <h1 id="title">Wallows</h1>
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left is-hidden"><img src="img/left.png"></button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide"><img class="carousel__image" src="img/photo-one.jpg"></li>
+                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-two.jpg"></li>
+                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-three.jpg"></li>
+                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-four.jpg"></li>
+                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-five.jpg"></li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--right"><img src="img/right.png"></button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </div>
+            <h2 id="connect">Connect</h2>
+            <p id="footer">2021 © Wallows</p>
+        </div>
+        <script src="js/carousel.js"></script>
     </body>
 </html>
+
+
+
+
+
