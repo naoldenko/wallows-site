@@ -6,12 +6,10 @@
 
 body {
     font-family: "Verona Bold";
-    
 }
 
 /* Border */ 
 html {
-    overflow: hidden;
     border: 10px solid #000000;
 }
 
@@ -103,7 +101,7 @@ html {
     display: none;
 }
 
-#title {
+.title {
     font-size: 120px;
     line-height: 277px;
     text-align: center;
