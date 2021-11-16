@@ -6,25 +6,36 @@
 
 body {
     font-family: "Verona Bold";
+    color: black;
 }
 
-/* Border */ 
 html {
-    border: 10px solid #000000;
+    background-image: url("../img/grain.jpg");
+    background-size: cover;
 }
 
 #home-div {
     margin-top: -64.8px;
 }
 
+.title {
+    font-size: 120px;
+    line-height: 277px;
+    text-align: center;
+    margin-top: 1.5%;
+    letter-spacing: -0.04em;
+
+    text-shadow: 29px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* Carousel */
+
 .carousel {
     position: relative;
     width: 500px;
     height: 400px;
     margin: 0 auto;
-    margin-top: -12%;
-    filter: drop-shadow(25px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: -10.5%;
 }
 
 .carousel__image {
@@ -61,7 +72,12 @@ html {
     transform: translateY(-50%);
     background: transparent;
     border: 0;
+    opacity: 0.3;
     cursor: pointer;
+}
+
+.carousel__button:hover {
+    opacity: 1;
 }
 
 .carousel__button--left {
@@ -87,7 +103,7 @@ html {
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(256, 256, 256, 0.5);
     margin: 0 15px;
     cursor: pointer;
     margin-top: -3%;
@@ -101,41 +117,245 @@ html {
     display: none;
 }
 
-.title {
-    font-size: 120px;
-    line-height: 277px;
-    text-align: center;
-    margin-top: -3%;
-    letter-spacing: -0.04em;
-
-    color: #000000;
-
-    text-shadow: 29px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 #connect {
     font-size: 35px;
     line-height: 63px;
     text-align: center;
-    margin-bottom: -1%;
+    margin-bottom: -0.3%;
     letter-spacing: -0.04em;
-
-    color: #000000;
+    text-decoration: underline;
 
     text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #connect:hover {
-    color: #FDF13D;
+    opacity: 0.5;
+    text-decoration: none;
 }
 
-#footer {
+footer {
     font-size: 25px;
     line-height: 50px;
     text-align: center;
     letter-spacing: -0.04em;
 
-    color: #000000;
-
     text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* 2x2 Grid Layout */
+
+.albums {
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    display: block;
+    margin-left: 280px;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: -50px;
+}
+
+.album-grid {
+    height: 1100px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+}
+
+/* Overlay */
+
+.remote {
+    position: relative;
+    width: 400px;
+}
+
+.remote-overlay {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 300px;
+    height: 300px;
+    background: rgba(256, 256, 256, 0.9);
+    color: black;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+.remote-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.remote-overlay:hover {
+    opacity: 1;  
+}
+
+.remote-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.remote-title {
+    font-size: 2em;
+}
+
+.remote-description {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+
+#listen {
+    color: black;
+}
+
+#listen:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.nh {
+    position: relative;
+    width: 400px;
+}
+
+.nh-overlay {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 300px;
+    height: 300px;
+    background: rgba(256, 256, 256, 0.9);
+    color: black;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+.nh-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.nh-overlay:hover {
+    opacity: 1;  
+}
+
+.nh-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.nh-title {
+    font-size: 2em;
+}
+
+.nh-description {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+
+.spring {
+    position: relative;
+    width: 400px;
+}
+
+.spring-overlay {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 300px;
+    height: 300px;
+    background: rgba(256, 256, 256, 0.9);
+    color: black;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+.spring-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.spring-overlay:hover {
+    opacity: 1;  
+}
+
+.spring-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.spring-title {
+    font-size: 2em;
+}
+
+.spring-description {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+
+.narwhals {
+    position: relative;
+    width: 400px;
+}
+
+.narwhals-overlay {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 300px;
+    height: 300px;
+    background: rgba(256, 256, 256, 0.9);
+    color: black;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+.narwhals-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.narwhals-overlay:hover {
+    opacity: 1;  
+}
+
+.narwhals-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.narwhals-title {
+    font-size: 2em;
+}
+
+.narwhals-description {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+    
+  
