@@ -28,6 +28,34 @@ html {
     text-shadow: 29px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.home {
+    position: absolute;
+    width: 147px;
+    height: 63px;
+    left: 1300px;
+    top: 58px;
+
+    font-family: "Verona Bold";
+    font-size: 50px;
+    line-height: 63px;
+    letter-spacing: -0.04em;
+
+    background: transparent;
+    border: none;
+
+    color: #000000;
+
+    text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.home:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
 /* Carousel */
 
 .carousel {
@@ -120,17 +148,82 @@ html {
 #connect {
     font-size: 35px;
     line-height: 63px;
-    text-align: center;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -0.3%;
     letter-spacing: -0.04em;
     text-decoration: underline;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: "Verona Bold";
 
     text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #connect:hover {
-    opacity: 0.5;
+    opacity: 0.6;
     text-decoration: none;
+    cursor: pointer;
+}
+
+#connect_overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 50%;
+    height: 75%; 
+    top: 10%;
+    left:25%;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 35px;
+    border: 2px solid black;
+    background-color: rgba(256,256,256,1);
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#connect-overlay-text {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    top: 20%;
+    left: 0;
+}
+
+#email {
+    border-radius: 35px;
+    border: 2px solid black;
+    height: 25px;
+    width: 220px;
+    padding: 7px;
+    font-size: 20px;
+    font-family: "Verona Bold";
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-socials {
+    width: 40px;
+    height: 40px;
+}
+
+#soundcloud {
+    width: 50px;
+    height: 50px;
+}
+
+li {
+    margin-right: 10px;
 }
 
 footer {
