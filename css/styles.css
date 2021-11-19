@@ -76,7 +76,7 @@ html {
     text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
 
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .explore-content {
@@ -100,6 +100,8 @@ html {
 .explore:hover .explore-content {
     display: block;
 }
+
+.explore:hover {text-decoration: none}
 
 /* Carousel */
 
