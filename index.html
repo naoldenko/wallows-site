@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Wallows | Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <div id="home-div">
-            <div class="explore">
-                <span>Explore▾</span>
-                <div class="explore-content">
-                    <a href="./pages/about.html">About</a>
-                    <a href="./pages/discography.html">Discography</a>
-                    <a href="https://wallowsmusic.store/">Merch</a>
-                    <a href="./pages/tour.html">Tour</a>
-                </div>
+
+<head>
+    <title>Wallows | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="home-div">
+        <div class="explore">
+            <span>Explore▾</span>
+            <div class="explore-content">
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/discography.html">Discography</a>
+                <a href="https://wallowsmusic.store/">Merch</a>
+                <a href="./pages/tour.html">Tour</a>
             </div>
-            <h1 class="title">Wallows</h1>
-            <div class="carousel">
-                <button class="carousel__button carousel__button--left is-hidden"><img src="img/left.png"></button>
-                <div class="carousel__track-container">
-                    <ul class="carousel__track">
-                        <li class="carousel__slide current-slide"><img class="carousel__image" src="img/photo-one.jpg"></li>
-                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-two.jpg"></li>
-                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-three.jpg"></li>
-                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-four.jpg"></li>
-                        <li class="carousel__slide"><img class="carousel__image" src="img/photo-five.jpg"></li>
-                    </ul>
-                </div>
-                <button class="carousel__button carousel__button--right"><img src="img/right.png"></button>
-                <div class="carousel__nav">
-                    <button class="carousel__indicator current-slide"></button>
-                    <button class="carousel__indicator"></button>
-                    <button class="carousel__indicator"></button>
-                    <button class="carousel__indicator"></button>
-                    <button class="carousel__indicator"></button>
-                </div>
-            </div>
-            <br>
-            <div id="connect_overlay" onclick="off()">
-                <div id="connect-overlay-text">
-                    <p>Subscribe to be the first to know the latest Wallows news!</p>
-                    <input type="email" id="email" placeholder="Email Address">
-                    <p>Get Text Updates!<br><u>+1 747 223 6014</u></p>
-                    <ul id="socials">
-                        <li><a><img class="connect-socials" src="img/tiktok.png"></a></li>
-                        <li><a><img class="connect-socials" src="img/instagram.png"></a></li>
-                        <li><a><img class="connect-socials" src="img/facebook.png"></a></li>
-                        <li><a><img class="connect-socials" src="img/twitter.png"></a></li>
-                        <li><a><img class="connect-socials" src="img/spotify.png"></a></li>
-                        <li><a><img class="connect-socials" id="soundcloud" src="img/soundcloud.png"></a></li>
-                        <li><a><img class="connect-socials" src="img/youtube.png"></a></li>
-                        <li><a><img class="connect-socials" src="img/apple.png"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <button id="connect" onclick="on()">Connect</button>
-            </div>
-            <footer>2021 © Wallows</footer>
+            <div class="backdrop"></div>
         </div>
-        <script src="js/carousel.js"></script>
-        <script src="js/connect.js"></script>
-    </body>
+        <h1 class="title">Wallows</h1>
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden"><img src="img/left.png"></button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide"><img class="carousel__image" src="img/photo-one.jpg"></li>
+                    <li class="carousel__slide"><img class="carousel__image" src="img/photo-two.jpg"></li>
+                    <li class="carousel__slide"><img class="carousel__image" src="img/photo-three.jpg"></li>
+                    <li class="carousel__slide"><img class="carousel__image" src="img/photo-four.jpg"></li>
+                    <li class="carousel__slide"><img class="carousel__image" src="img/photo-five.jpg"></li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right"><img src="img/right.png"></button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+        <br>
+        <div id="connect_overlay" onclick="off()">
+            <div id="connect-overlay-text">
+                <p>Subscribe to be the first to know the latest Wallows news!</p>
+                <input type="email" id="email" placeholder="Email Address">
+                <p>Get Text Updates!<br><u>+1 747 223 6014</u></p>
+                <ul id="socials">
+                    <li><a><img class="connect-socials" src="img/tiktok.png"></a></li>
+                    <li><a><img class="connect-socials" src="img/instagram.png"></a></li>
+                    <li><a><img class="connect-socials" src="img/facebook.png"></a></li>
+                    <li><a><img class="connect-socials" src="img/twitter.png"></a></li>
+                    <li><a><img class="connect-socials" src="img/spotify.png"></a></li>
+                    <li><a><img class="connect-socials" id="soundcloud" src="img/soundcloud.png"></a></li>
+                    <li><a><img class="connect-socials" src="img/youtube.png"></a></li>
+                    <li><a><img class="connect-socials" src="img/apple.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button id="connect" onclick="on()">Connect</button>
+        </div>
+        <footer>2021 © Wallows</footer>
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/connect.js"></script>
+</body>
+
 </html>
-
-
-
-
-
