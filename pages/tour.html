@@ -5,36 +5,39 @@
     <title>Wallows | Tour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <div class="explore">
-        <span>Explore▾</span>
-        <div class="explore-content">
-            <a href="./about.html">About</a>
-            <a href="./discography.html">Discography</a>
-            <a href="https://wallowsmusic.store/">Merch</a>
-            <a href="./tour.html">Tour</a>
+    <div data-aos="fade-down">
+        <div class="explore">
+            <span>Explore▾</span>
+            <div class="explore-content">
+                <a href="./about.html">About</a>
+                <a href="./discography.html">Discography</a>
+                <a href="https://wallowsmusic.store/">Merch</a>
+                <a href="./tour.html">Tour</a>
+            </div>
+            <div class="backdrop"></div>
         </div>
-        <div class="backdrop"></div>
-    </div>
-    <h1 class="title">Tour</h1>
-    <a href="../index.html"><button class="home">Home</button></a>
-    <div class="cities">
-        <p class="dates">Fri. Apr 1, 2022<br>Sat. Apr 2, 2022<br>Sun. Apr 3, 2022</p>
-        <p class="places">Paramount Theatre<br>The Orpheum<br>McMenamins Crystal Ballroom</p>
-        <p class="city">Seattle, WA<br>Vancouver, CAN<br>Portland, OR</p>
-        <p class="tickets">
-            <span id="ticket-one">Tickets/RSVP</span>
-            <br>
-            <span id="ticket-two">Tickets/RSVP</span>
-            <br>
-            <span id="ticket-three">Tickets/RSVP</span>
-        </p>
-    </div>
-    <p id="more-cities"><a id="more-cities-lettering">More Cities</a></p>
-    <br>
-    <div id="connect_overlay" onclick="off()">
+        <h1 class="title">Tour</h1>
+        <a href="../index.html"><button class="home">Home</button></a>
+        <div class="cities" data-aos="fade-up">
+            <p class="dates" data-aos="fade-left">Fri. Apr 1, 2022<br>Sat. Apr 2, 2022<br>Sun. Apr 3, 2022</p>
+            <p class="places" data-aos="fade-left">Paramount Theatre<br>The Orpheum<br>McMenamins Crystal Ballroom</p>
+            <p class="city" data-aos="fade-right">Seattle, WA<br>Vancouver, CAN<br>Portland, OR</p>
+            <p class="tickets" data-aos="fade-right">
+                <span id="ticket-one">Tickets/RSVP</span>
+                <br>
+                <span id="ticket-two">Tickets/RSVP</span>
+                <br>
+                <span id="ticket-three">Tickets/RSVP</span>
+            </p>
+        </div>
+        <p id="more-cities" data-aos="fade-left"><a id="more-cities-lettering">More Cities</a></p>
+        <br>
+        <!-- <div id="connect_overlay" onclick="off()">
         <div id="connect-overlay-text">
             <p>Subscribe to be the first to know the latest Wallows news!</p>
             <input type="email" id="email" placeholder="Email Address">
@@ -52,10 +55,21 @@
         </div>
     </div>
     <div>
-        <button id="connect" onclick="on()">Connect</button>
+        <button id="connect" onclick="on()" data-aos="fade-left">Connect</button>
+    </div> -->
+        <footer data-aos="fade-right">2021 © Wallows</footer>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <footer>2021 © Wallows</footer>
     <script src="../js/connect.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+        window.addEventListener('load', AOS.refresh);
+    </script>
 </body>
 
 </html>

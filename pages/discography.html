@@ -5,94 +5,112 @@
     <title>Wallows | Discography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <div class="explore">
-        <span>Explore▾</span>
-        <div class="explore-content">
-            <a href="./about.html">About</a>
-            <a href="./discography.html">Discography</a>
-            <a href="https://wallowsmusic.store/">Merch</a>
-            <a href="./tour.html">Tour</a>
+    <div data-aos="fade-down">
+        <div class="explore">
+            <span>Explore▾</span>
+            <div class="explore-content">
+                <a href="./about.html">About</a>
+                <a href="./discography.html">Discography</a>
+                <a href="https://wallowsmusic.store/">Merch</a>
+                <a href="./tour.html">Tour</a>
+            </div>
+            <div class="backdrop"></div>
         </div>
-        <div class="backdrop"></div>
-    </div>
-    <h1 class="title">Discography</h1>
-    <a href="../index.html"><button class="home">Home</button></a>
-    <div class="album-grid">
-        <div class="remote">
-            <img class="albums" src="../img/remote.jpg">
-            <div class="remote-overlay">
-                <div class="remote-title">Remote</div>
-                <br>
-                <p class="remote-description">
-                    “Remote” is the third extended play (EP) by American band Wallows. It was released on October 23,
-                    2020 through Atlantic Records.
-                </p>
-                <p><a id="listen" href="https://youtube.com/playlist?list=PLQmOQjz-rtbAHBuqTRJ4MPTvwpZAEFNSe">Listen</a>
-                </p>
+        <h1 class="title">Discography</h1>
+        <a href="../index.html"><button class="home">Home</button></a>
+        <div class="album-grid">
+            <div class="remote" data-aos="fade-right">
+                <img class="albums" src="../img/remote.jpg">
+                <div class="remote-overlay">
+                    <div class="remote-title">Remote</div>
+                    <br>
+                    <p class="remote-description">
+                        “Remote” is the third extended play (EP) by American band Wallows. It was released on October
+                        23,
+                        2020 through Atlantic Records.
+                    </p>
+                    <p><a id="listen"
+                            href="https://youtube.com/playlist?list=PLQmOQjz-rtbAHBuqTRJ4MPTvwpZAEFNSe">Listen</a>
+                    </p>
+                </div>
+            </div>
+            <div class="nh" data-aos="fade-left">
+                <img class="albums" src="../img/nothing-happens.jpg">
+                <div class="nh-overlay">
+                    <div class="nh-title">Nothing Happens</div>
+                    <br>
+                    <p class="nh-description">
+                        “Nothing Happens” is the debut studio album by American band Wallows, released on March 22, 2019
+                        through Atlantic Records.
+                    </p>
+                    <p><a id="listen" href="https://wallows.lnk.to/NothingHappensIN">Listen</a></p>
+                </div>
+            </div>
+            <div class="spring" data-aos="fade-right">
+                <img class="albums" src="../img/spring.jpg">
+                <div class="spring-overlay">
+                    <div class="spring-title">Spring</div>
+                    <br>
+                    <p class="spring-description">
+                        “Spring” is the second extended play (EP) by American band Wallows, released on April 6, 2018
+                        through Atlantic Records.
+                    </p>
+                    <p><a id="listen"
+                            href="https://www.youtube.com/playlist?list=PLQmOQjz-rtbChi2NBMQvBxz9HGCUTnHTl">Listen</a>
+                    </p>
+                </div>
+            </div>
+            <div class="narwhals" data-aos="fade-left">
+                <img class="albums" src="../img/narwhals.jpg">
+                <div class="narwhals-overlay">
+                    <div class="narwhals-title">Narwhals</div>
+                    <br>
+                    <p class="narwhals-description">
+                        “The Narwhals” is the debut extended play by American band Wallows, released on October 10th,
+                        2014
+                        (independently).
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="nh">
-            <img class="albums" src="../img/nothing-happens.jpg">
-            <div class="nh-overlay">
-                <div class="nh-title">Nothing Happens</div>
-                <br>
-                <p class="nh-description">
-                    “Nothing Happens” is the debut studio album by American band Wallows, released on March 22, 2019
-                    through Atlantic Records.
-                </p>
-                <p><a id="listen" href="https://wallows.lnk.to/NothingHappensIN">Listen</a></p>
+        <!-- <div id="connect_overlay" onclick="off()">
+            <div id="connect-overlay-text">
+                <p>Subscribe to be the first to know the latest Wallows news!</p>
+                <input type="email" id="email" placeholder="Email Address">
+                <p>Get Text Updates!<br><u>+1 747 223 6014</u></p>
+                <ul id="socials">
+                    <li><a><img class="connect-socials" src="../img/tiktok.png"></a></li>
+                    <li><a><img class="connect-socials" src="../img/instagram.png"></a></li>
+                    <li><a><img class="connect-socials" src="../img/facebook.png"></a></li>
+                    <li><a><img class="connect-socials" src="../img/twitter.png"></a></li>
+                    <li><a><img class="connect-socials" src="../img/spotify.png"></a></li>
+                    <li><a><img class="connect-socials" id="soundcloud" src="../img/soundcloud.png"></a></li>
+                    <li><a><img class="connect-socials" src="../img/youtube.png"></a></li>
+                    <li><a><img class="connect-socials" src="../img/apple.png"></a></li>
+                </ul>
             </div>
         </div>
-        <div class="spring">
-            <img class="albums" src="../img/spring.jpg">
-            <div class="spring-overlay">
-                <div class="spring-title">Spring</div>
-                <br>
-                <p class="spring-description">
-                    “Spring” is the second extended play (EP) by American band Wallows, released on April 6, 2018
-                    through Atlantic Records.
-                </p>
-                <p><a id="listen"
-                        href="https://www.youtube.com/playlist?list=PLQmOQjz-rtbChi2NBMQvBxz9HGCUTnHTl">Listen</a></p>
-            </div>
-        </div>
-        <div class="narwhals">
-            <img class="albums" src="../img/narwhals.jpg">
-            <div class="narwhals-overlay">
-                <div class="narwhals-title">Narwhals</div>
-                <br>
-                <p class="narwhals-description">
-                    “The Narwhals” is the debut extended play by American band Wallows, released on October 10th, 2014
-                    (independently).
-                </p>
-            </div>
-        </div>
+        <div>
+            <button id="connect" onclick="on()" data-aos="fade-left">Connect</button>
+        </div> -->
+        <footer data-aos="fade-right">2021 © Wallows</footer>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <div id="connect_overlay" onclick="off()">
-        <div id="connect-overlay-text">
-            <p>Subscribe to be the first to know the latest Wallows news!</p>
-            <input type="email" id="email" placeholder="Email Address">
-            <p>Get Text Updates!<br><u>+1 747 223 6014</u></p>
-            <ul id="socials">
-                <li><a><img class="connect-socials" src="../img/tiktok.png"></a></li>
-                <li><a><img class="connect-socials" src="../img/instagram.png"></a></li>
-                <li><a><img class="connect-socials" src="../img/facebook.png"></a></li>
-                <li><a><img class="connect-socials" src="../img/twitter.png"></a></li>
-                <li><a><img class="connect-socials" src="../img/spotify.png"></a></li>
-                <li><a><img class="connect-socials" id="soundcloud" src="../img/soundcloud.png"></a></li>
-                <li><a><img class="connect-socials" src="../img/youtube.png"></a></li>
-                <li><a><img class="connect-socials" src="../img/apple.png"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <button id="connect" onclick="on()">Connect</button>
-    </div>
-    <footer>2021 © Wallows</footer>
     <script src="../js/connect.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+        window.addEventListener('load', AOS.refresh);
+    </script>
 </body>
 
 </html>
